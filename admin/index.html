@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Kalli Admin</title>
+<link rel="icon" type="image/png" sizes="48x48" href="../iconos/kalli-48.png">
+<link rel="apple-touch-icon" href="../iconos/kalli-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#173026">
+<meta name="apple-mobile-web-app-title" content="Kalli Admin">
+<style>
+:root{--bg:#173026;--ink:#EEF3EC;--mute:#A7BDB0;--gold:#E09A2E;--gold-ink:#2A1904}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{min-height:100vh;min-height:100dvh;display:grid;place-content:center;gap:18px;padding:24px 16px;text-align:center}
+img{width:96px;height:96px;margin:0 auto;border-radius:22px}
+h1{margin:0;font-size:1.5rem}
+a.btn{display:block;min-height:56px;padding:16px 22px;border-radius:14px;background:var(--gold);color:var(--gold-ink);font-weight:700;font-size:1.15rem;text-decoration:none}
+a.sec{color:var(--mute);font-size:.95rem}
+</style>
+</head>
+<body>
+<main>
+<img src="../iconos/kalli-192.png" alt="">
+<h1>Kalli Admin</h1>
+<a class="btn" id="abrir" href="https://claude.ai/artifact/N5zXvMKK6g2kc2TEsUA9CL">Abrir Admin</a>
+<a class="sec" href="https://claude.ai/artifact/N5zXvMKK6g2kc2TEsUA9CL">Abrir en el navegador</a>
+</main>
+<script>
+/* En Android abre la app de Claude directo; si no está, el navegador. */
+(function(){var u='https://claude.ai/artifact/N5zXvMKK6g2kc2TEsUA9CL',a=document.getElementById('abrir');
+if(/Android/i.test(navigator.userAgent||''))a.href='intent://'+u.replace(/^https:\/\//,'')+'#Intent;scheme=https;package=com.anthropic.claude;S.browser_fallback_url='+encodeURIComponent(u)+';end';})();
+</script>
+</body>
+</html>

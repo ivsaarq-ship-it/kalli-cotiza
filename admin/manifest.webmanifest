@@ -1,0 +1,13 @@
+{
+ "name": "Kalli Admin",
+ "short_name": "Kalli Admin",
+ "start_url": "./",
+ "scope": "./",
+ "display": "browser",
+ "background_color": "#173026",
+ "theme_color": "#173026",
+ "icons": [
+  {"src": "../iconos/kalli-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+  {"src": "../iconos/kalli-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+ ]
+}
